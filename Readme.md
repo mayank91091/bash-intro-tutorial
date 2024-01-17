@@ -341,23 +341,25 @@ Here's an example of a case statement in a shell script:
 ```bash
 #!/bin/bash
 
-fruit="apple"
+case $1 in
+ apple | mango | grapes) # here is differnet function for pipe which seprator for diff options 
+        # If $1 is "apple," "mango," or "grapes," execute the following block.
+        echo "good $1"
+        ;; #these are semicolon used to end one statement 
 
-case "$fruit" in
-    "apple")
-        echo "It's an apple."
+    help)
+        # If $1 is argument "help," execute the following block.
+        echo "type apple, mango, grape"
         ;;
-    "banana")
-        echo "It's a banana."
-        ;;
-    "orange")
-        echo "It's an orange."
-        ;;
+
     *)
-        echo "It's something else."
-        ;;
-esac
+        # If $1 does not match any of the specified patterns, execute this block.
+        echo "hello there you don't like it?"
+esac   #keyword to end case statement
+
 ```
+here is above given program explanation 
+
 
 In this script, the value of the `fruit` variable is checked against different patterns, and the corresponding block of code is executed based on the match. In this case, it will print "It's an apple."
 
