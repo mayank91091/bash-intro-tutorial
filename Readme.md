@@ -364,3 +364,5 @@ here is above given program explanation
 In this script, the value of the `fruit` variable is checked against different patterns, and the corresponding block of code is executed based on the match. In this case, it will print "It's an apple."
 
 You can have as many patterns as needed, and each pattern can contain multiple conditions. Case statements are particularly useful when you have a finite number of options to check, making your code more structured and easier to read than a series of `if`/`elif`/`else` statements for each condition.
+learnt awk after this
+sed as text manipulator 
